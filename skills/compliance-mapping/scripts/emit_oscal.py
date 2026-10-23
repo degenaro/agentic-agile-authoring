@@ -217,7 +217,7 @@ def main():
                 "props": [
                     {
                         "name": "mapping-rationale",
-                        "value": rationale_text,
+                        "value": rationale_text.strip(),
                         "ns": args.ns,
                     }
                 ],
@@ -253,7 +253,7 @@ def main():
                 "status": "complete",
                 "mapping-description": description,
             },
-            "mappings": [mapping_entry],
+            "mappings": mapping_entry,
         }
     }
 
